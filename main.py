@@ -206,6 +206,7 @@ class MainWindow(QtWidgets.QMainWindow):
 if __name__ == "__main__":
     import sys
     app = QtWidgets.QApplication(sys.argv)
+    app.setWindowIcon(QtGui.QIcon(QtGui.QPixmap('asset/icons/calendar.ico')))
     window = MainWindow()
     window.show()
     sys.exit(app.exec())
